@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style/main.css" />
+    <script src="script/input.js" defer></script>
+    <script src="script/submit.js" defer></script>
   </head>
   <body>
+    <div id="transBack">
+      <div class="inputArea">
+        <label class="labelTxtinp" for="txtinp">Podaj zadanie: </label>
+        <input id="txtinp" type="text" />
+        <img src="img/add/plus.png" alt="przycik dodania elementu" />
+      </div>
+    </div>
+
     <section id="mainbox">
       <section id="mainbox_icons">
-        <section id="mainbox_icons_iconbox"></section>
-        <section id="mainbox_icons_completedbox"></section>
+        <section id="mainbox_icons_iconbox">
+          <img
+            class="topIcons"
+            src="img/list/listActive_lightmode.png"
+            alt="List icon active"
+          />
+        </section>
+        <section id="mainbox_icons_completedbox">
+          <img
+            class="topIcons"
+            src="img/done/doneNotactive_lightmode.png"
+            alt="Done icon not active"
+          />
+        </section>
       </section>
-      <section id="mainbox_list"></section>
+      <section id="mainbox_list" class="listORcompleted">
+        <ul class="listToDo"></ul>
+        <img src="img/add/plus.png" alt="przycik dodania elementu" />
+      </section>
+      <section id="mainbox_completed" class="listORcompleted"></section>
     </section>
   </body>
 </html>
