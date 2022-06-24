@@ -1,0 +1,56 @@
+* {
+  /* temp */
+  /* border: 1px solid black; */
+}
+
+body {
+  background: rgb(28, 181, 240);
+  background: linear-gradient(
+    97deg,
+    rgba(28, 181, 240, 1) 0%,
+    rgba(28, 181, 240, 1) 29%,
+    rgba(70, 252, 229, 1) 80%,
+    rgba(70, 252, 229, 1) 95%
+  );
+}
+
+#mainbox {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 37.5%;
+  top: 15%;
+  width: 25%;
+  height: 70%;
+}
+
+#mainbox_icons {
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+}
+
+/* /// ICONS /// */
+#mainbox_icons_iconbox {
+  border-radius: 15px 0px 0px 0px;
+
+  background-color: #f8f8f8;
+  width: 50%;
+  height: 100%;
+}
+
+#mainbox_icons_completedbox {
+  border-radius: 0px 15px 0px 0px;
+
+  width: 50%;
+  background-color: #f8f8f8;
+  height: 100%;
+}
+
+/* /// LIST /// */
+
+#mainbox_list {
+  border-radius: 0px 0px 15px 15px;
+  background-color: #f8f8f8;
+  height: 100%;
+}

@@ -1,0 +1,11 @@
+background color coustomable
+login and database
+saing "hi, [name]!" after login
+"great!" after completing task
+
+
+
+animated crosing comleted task
+animated fade to right after completing task
+animated switch between tabs
+
