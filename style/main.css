@@ -35,14 +35,13 @@
   position: relative;
   width: 7vh;
   height: 7vh;
-
   top: 45%;
   left: 0;
-
   cursor: pointer;
 }
 
 .labelTxtinp {
+  margin-bottom: 40px;
 }
 
 /* /// mainbox /// */
@@ -93,11 +92,9 @@ body {
 #mainbox_icons_iconbox {
   display: flex;
   border-radius: 15px 0px 0px 0px;
-
   background-color: #f8f8f8;
   width: 50%;
   height: 100%;
-
   position: relative;
 }
 
@@ -118,7 +115,6 @@ body {
   background-color: #e6e6e6;
   border-left: 2px solid #c5c5c5;
   border-bottom: 2px solid #c5c5c5;
-
   height: 100%;
 }
 
