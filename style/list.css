@@ -1,0 +1,38 @@
+
+ul{
+    padding-inline-start: 0;
+  }
+  
+  #mainbox_list {
+    display: flex;
+    /* position: relative; */
+  }
+  
+  #mainbox_list > img {
+    position: absolute;
+    align-self: flex-end;
+    width: 5vh;
+    height: 5vh;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+  }
+  
+  .listORcompleted {
+    border-radius: 0px 0px 15px 15px;
+    background-color: #f8f8f8;
+    height: 100%;
+  }
+  
+  .listToDo {
+    /* background-color: #f8f8f8; */
+    /* display: flex; */
+    position: relative;
+    width: 100%;
+    list-style: none;
+    /* overflow-y: scroll; */
+    /* justify-content: center; */
+    }
+  
+  
+  

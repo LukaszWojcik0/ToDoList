@@ -64,11 +64,11 @@
 
 /* /// mainbox /// */
 
-#mainbox,
+/* #mainbox,
 #mainbox_icons_iconbox,
 #mainbox_icons_completedbox {
-  /* border: 1px solid black; */
-}
+  border: 1px solid black;
+} */
 
 body {
   background: rgb(28, 181, 240);
@@ -136,56 +136,3 @@ body {
   height: 100%;
 }
 
-/* /// LISTorCOMPLETED /// */
-
-#mainbox_list {
-  display: flex;
-  /* position: relative; */
-}
-
-#mainbox_list > img {
-  position: absolute;
-  align-self: flex-end;
-  width: 5vh;
-  height: 5vh;
-  right: 5%;
-  bottom: 5%;
-  cursor: pointer;
-}
-
-#mainbox_completed {
-  display: none;
-}
-
-.listORcompleted {
-  border-radius: 0px 0px 15px 15px;
-  background-color: #f8f8f8;
-  height: 100%;
-}
-
-.listToDo {
-  /* background-color: #f8f8f8; */
-  position: relative;
-  width: 80%;
-  list-style: none;
-  /* overflow-y: scroll; */
-}
-
-.list_task {
-  /* text-decoration: line-through; */
-  background-color: red;
-  margin-bottom: 2%;
-  padding: 2%;
-  border-radius: 10px;
-  align-self: center;
-
-  /* display: flex; */
-  /* width: 100%; */
-}
-
-.task_delete {
-  /* position: absolute; */
-  width: 10%;
-}
-.task_confirm {
-}
