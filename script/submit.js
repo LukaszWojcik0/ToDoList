@@ -38,6 +38,28 @@ function taskSubmit() {
     ++counter;
 
     document.querySelector(".inputArea").style.display = "none";
+
+    const deleteIcons = document.querySelectorAll(".task_delete");
+
+    deleteIcons.forEach((icon) => {
+      icon.addEventListener("mouseover", function () {
+        icon.src = "img/list/cross-mark-red.png";
+      });
+      icon.addEventListener("mouseout", function () {
+        icon.src = "img/list/cross-mark-black.png";
+      });
+    });
+
+    const completeIcons = document.querySelectorAll(".task_confirm");
+
+    completeIcons.forEach((icon) => {
+      icon.addEventListener("mouseover", function () {
+        icon.src = "img/list/check-mark-green.png";
+      });
+      icon.addEventListener("mouseout", function () {
+        icon.src = "img/list/check-mark-black.png";
+      });
+    });
   } else {
     alert("Nazwa zadania musi być dłuższa niż 1 znak");
   }
