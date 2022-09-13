@@ -107,6 +107,15 @@ body {
 }
 
 /* /// ICONS /// */
+
+.topIcons {
+  height: 45%;
+  position: relative;
+  top: 25%;
+  left: 41%;
+  cursor: pointer;
+}
+
 #mainbox_icons_iconbox {
   display: flex;
   border-radius: 15px 0px 0px 0px;
@@ -114,14 +123,6 @@ body {
   width: 50%;
   height: 100%;
   position: relative;
-}
-
-.topIcons {
-  width: 18%;
-  height: 50%;
-  position: relative;
-  top: 25%;
-  left: 41%;
 }
 
 #mainbox_icons_completedbox {
@@ -135,4 +136,3 @@ body {
   border-bottom: 2px solid #c5c5c5;
   height: 100%;
 }
-

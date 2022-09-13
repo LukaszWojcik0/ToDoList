@@ -52,7 +52,6 @@ addTask.addEventListener("click", function () {
       e.key === "Enter" &&
       document.querySelector(".inputArea").style.display == "flex"
     ) {
-      console.log("essasunia?");
       taskSubmit();
     }
   });

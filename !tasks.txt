@@ -1,0 +1,10 @@
+dodanie kolorów do :hover nad przyciskami przy zadaniu 
+usunięcie autouzupełniania w polu dodawania zadania
+dodawanie zadań do local storage
+dodawanie zadań z local storage do karty ukończone 
+zmiana widoku kart zadania/ukończone zależnie od klikniętego  
+
+KONTA
+-logowanie do konta
+-przywitanie po imieniu
+-przypisywan

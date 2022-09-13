@@ -1,35 +1,34 @@
 .list_task {
-    /* text-decoration: line-through; */
-    justify-content: center;
+  /* text-decoration: line-through; */
+  justify-content: center;
 
-    width: 90%;
-  
-    display: flex;
-    /* width: 100%; */
-  }
-  
-  .taskContent{
-    background-color: rgb(82, 225, 209);
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    padding: 2%;
-    border-radius: 10px;
-    width: 100%;
+  width: 90%;
+
+  display: flex;
+  /* width: 100%; */
 }
-  .task_delete {
-    /* position: absolute; */
-    cursor: pointer;
-    width: 8%;
-    height: 8%;
-    margin: 1%;
-  }
 
+.taskContent {
+  background-color: rgb(82, 225, 209);
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  width: 100%;
+}
+.task_delete {
+  /* position: absolute; */
+  cursor: pointer;
+  width: 8%;
+  height: 8%;
+  margin: 1%;
+}
 
-  .task_confirm {
-    cursor: pointer;
-    width: 8%;
-    height: 8%;
-    margin: 1%;
-    margin-left: 2%;
-  }
+.task_confirm {
+  cursor: pointer;
+  width: 8%;
+  height: 8%;
+  margin: 1%;
+  margin-left: 2%;
+}
