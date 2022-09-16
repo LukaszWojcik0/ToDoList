@@ -2,6 +2,7 @@
 /DONE/ usunięcie autouzupełniania w polu dodawania zadania
 /DONE/ dodawanie zadań do local storage
 /DONE/ tworzenie elementów z local storage po wejściu na stronę
+usuwanie zadań po kliknięciu w "X"
 dodawanie zadań z local storage do karty ukończone 
 zmiana widoku kart zadania/ukończone zależnie od klikniętego  
 potwiedzenia usunięcia zadania

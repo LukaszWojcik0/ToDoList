@@ -27,11 +27,13 @@ if (localStorage.getItem("z0") == null) {
     // icons delete and confirm
     const deleteMark = document.createElement("img");
     deleteMark.classList.add("task_delete");
+    deleteMark.classList.add("del-" + (counter - counter + i));
     deleteMark.src = "img/list/cross-mark-black.png";
     taskElement.appendChild(deleteMark);
 
     const confirmMark = document.createElement("img");
     confirmMark.classList.add("task_confirm");
+    confirmMark.classList.add("conf-" + (counter - counter + i));
     confirmMark.src = "img/list/check-mark-black.png";
     taskElement.appendChild(confirmMark);
 
@@ -45,6 +47,10 @@ if (localStorage.getItem("z0") == null) {
       icon.addEventListener("mouseout", function () {
         icon.src = "img/list/cross-mark-black.png";
       });
+    });
+
+    deleteIcons.forEach((icon) => {
+      icon.addEventListener("click", DelteTask);
     });
 
     const completeIcons = document.querySelectorAll(".task_confirm");
