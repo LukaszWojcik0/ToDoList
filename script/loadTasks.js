@@ -1,21 +1,13 @@
-//// Adding task to list
-
-let button = document.querySelector(".inputArea>img");
-
-let counter =
-  localStorage.getItem("counter") == null ? 0 : localStorage.getItem("counter");
-
-function taskSubmit() {
-  let task = document.querySelector("#txtinp").value;
-
-  if (task.length > 1) {
-    localStorage.removeItem("counter");
-
+if (localStorage.getItem("z0") == null) {
+  console.log("brak zadań w localstorage");
+} else {
+  console.log("są zadania w localstorage");
+  for (let i = 0; i < counter; i++) {
     // li element
     const taskElement = document.createElement("li");
     taskElement.classList.add("list_task");
-    taskElement.classList.add("orderClass" + counter);
-    taskElement.value = counter;
+    taskElement.classList.add("orderClass" + (counter - counter + i));
+    taskElement.value = counter - counter + i;
 
     const parent = document.querySelector(".listToDo");
     parent.appendChild(taskElement);
@@ -23,17 +15,14 @@ function taskSubmit() {
     // content of the task
     const taskElement_content = document.createElement("div");
     taskElement_content.classList.add("taskContent");
-    taskElement_content.innerText = task;
+    taskElement_content.innerText = localStorage.getItem("z" + [i]);
 
-    const elementParent = document.querySelector(".orderClass" + counter);
+    ///nic
+
+    const elementParent = document.querySelector(
+      ".orderClass" + (counter - counter + i)
+    );
     elementParent.appendChild(taskElement_content);
-
-    // setting localstorage items with tasks
-    for (let i = 0; i <= counter; i++) {
-      if (localStorage.getItem("z" + [i]) == null) {
-        localStorage.setItem("z" + [i], task);
-      }
-    }
 
     // icons delete and confirm
     const deleteMark = document.createElement("img");
@@ -46,14 +35,7 @@ function taskSubmit() {
     confirmMark.src = "img/list/check-mark-black.png";
     taskElement.appendChild(confirmMark);
 
-    ++counter;
-    localStorage.setItem("counter", counter);
-
-    let check = localStorage.getItem("counter");
-    console.log(check);
-
-    document.querySelector(".inputArea").style.display = "none";
-
+    ///nic
     const deleteIcons = document.querySelectorAll(".task_delete");
 
     deleteIcons.forEach((icon) => {
@@ -75,21 +57,5 @@ function taskSubmit() {
         icon.src = "img/list/check-mark-black.png";
       });
     });
-  } else {
-    alert("Nazwa zadania musi być dłuższa niż 1 znak");
   }
 }
-
-button.addEventListener("click", taskSubmit);
-
-const addTask = document.querySelector("#mainbox_list > img");
-addTask.addEventListener("click", function () {
-  window.addEventListener("keydown", function (e) {
-    if (
-      e.key === "Enter" &&
-      document.querySelector(".inputArea").style.display == "flex"
-    ) {
-      taskSubmit();
-    }
-  });
-});

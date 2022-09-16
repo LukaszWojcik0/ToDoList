@@ -1,11 +1,21 @@
 /DONE/ dodanie kolorów do :hover nad przyciskami przy zadaniu 
 /DONE/ usunięcie autouzupełniania w polu dodawania zadania
-dodawanie zadań do local storage
-tworzenie elementów z local storage po wejściu na stronę
+/DONE/ dodawanie zadań do local storage
+/DONE/ tworzenie elementów z local storage po wejściu na stronę
 dodawanie zadań z local storage do karty ukończone 
 zmiana widoku kart zadania/ukończone zależnie od klikniętego  
+potwiedzenia usunięcia zadania
+zwrot zadania z ukończonych od nieukończonych
+opcja wyjścia z ona tworzenia zadania
+
+
+
+
+
+* BAZA DANYCH *
+
 
 KONTA
 -logowanie do konta
 -przywitanie po imieniu
--przypisywan
+-przypisywanie zadań do konta
