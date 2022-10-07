@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="style/completed.css" />
     <link rel="stylesheet" href="style/task.css" />
 
-    <script src="script/taskComplete.js"></script>
+    <script src="script/taskComplete.js" defer></script>
     <script src="script/taskDelete.js" defer></script>
     <script src="script/input.js" defer></script>
     <script src="script/submit.js" defer></script>
     <script src="script/loadTasks.js" defer></script>
+    <script src="script/tabsSwitch.js" defer></script>
   </head>
   <body>
     <div id="transBack">
@@ -30,6 +31,7 @@
         <section id="mainbox_icons_iconbox">
           <img
             class="topIcons"
+            id="listIcon"
             src="img/top icons/list/listActive_lightmode.png"
             alt="List icon active"
           />
@@ -37,6 +39,7 @@
         <section id="mainbox_icons_completedbox">
           <img
             class="topIcons"
+            id="completedIcon"
             src="img/top icons/done/doneNotactive_lightmode.png"
             alt="Done icon not active"
           />
