@@ -40,6 +40,7 @@ if (localStorage.getItem("z0") == null) {
     ///nic
     const deleteIcons = document.querySelectorAll(".task_delete");
 
+
     deleteIcons.forEach((icon) => {
       icon.addEventListener("mouseover", function () {
         icon.src = "img/list/cross-mark-red.png";
@@ -53,14 +54,22 @@ if (localStorage.getItem("z0") == null) {
       icon.addEventListener("click", DelteTask);
     });
 
+    
     const completeIcons = document.querySelectorAll(".task_confirm");
-
+    
     completeIcons.forEach((icon) => {
       icon.addEventListener("mouseover", function () {
         icon.src = "img/list/check-mark-green.png";
       });
       icon.addEventListener("mouseout", function () {
         icon.src = "img/list/check-mark-black.png";
+      });
+    });
+    
+    completeIcons.forEach((icon) => {
+      icon.addEventListener("click", function(){  
+        CompleteTask()
+        DelteTask()
       });
     });
   }

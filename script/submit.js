@@ -81,6 +81,16 @@ function taskSubmit() {
         icon.src = "img/list/check-mark-black.png";
       });
     });
+
+    completeIcons.forEach((icon) => {
+      icon.addEventListener("click", function(){
+        console.log("chujchujchuj")
+        CompleteTask()
+        DelteTask()
+      });
+    });
+
+    
   } else {
     alert("Nazwa zadania musi być dłuższa niż 1 znak");
   }
