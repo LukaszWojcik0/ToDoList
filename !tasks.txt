@@ -4,10 +4,10 @@
 /DONE/ tworzenie elementów z local storage po wejściu na stronę
 /DONE/ usuwanie zadań po kliknięciu w "X"
 dodawanie zadań z local storage do karty ukończone 
-zmiana widoku kart zadania/ukończone zależnie od klikniętego  
+/DONE/ zmiana widoku kart zadania/ukończone zależnie od klikniętego  
 potwiedzenia usunięcia zadania
 zwrot zadania z ukończonych od nieukończonych
-opcja wyjścia z ona tworzenia zadania
+zamykanie okna tworzenia zadania
 
 
 
