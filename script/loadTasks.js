@@ -66,11 +66,6 @@ if (localStorage.getItem("z0") == null) {
       });
     });
     
-    completeIcons.forEach((icon) => {
-      icon.addEventListener("click", function(){  
-        CompleteTask()
-        DelteTask()
-      });
-    });
+    
   }
 }

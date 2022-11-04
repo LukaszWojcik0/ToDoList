@@ -1,39 +1,4 @@
-/// adding task to local storage and transfering it to 'completed' tab
-
-
-function CompleteTask(thisClass) {
-
-
-
-    console.log(thisClass)
-    // console.log(this.classList)
-    let completeMarkClass = thisClass[1];
-    console.log("klasa 1" + completeMarkClass)
-    let valueNumber = completeMarkClass.slice(5);
-    console.log("value po slice" + valueNumber)
-    
-    
-    let task = localStorage.getItem("z"+valueNumber)
-    // console.log(task)
-    if (localStorage.getItem("complCounter")!=null){
-        localStorage.removeItem("complCounter")
-    }else{
-        let complCounter = 0
-    localStorage.setItem("complCounter", complCounter)
-
-
-    for(let i = 0; i<= complCounter; i++){
-        if (localStorage.getItem("c"+i)==null){
-            localStorage.setItem("c"+i, task)
-        }
-    }
-
-    }
-
-    
-
-
-    ///// DEL func
+function delFunc() {
     let childLi = document.querySelector(".orderClass" + valueNumber);
     let parent = document.querySelector(".listToDo");
     parent.removeChild(childLi);
@@ -85,13 +50,4 @@ listparrent.innerHTML = "";
 LoadTasks();
 
 }
-///////
-    
-    
-    
-    
 }
-
-// localStorage.setItem("anytask", "a no są i co");
-
-// localStorage.clear();

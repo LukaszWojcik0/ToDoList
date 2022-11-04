@@ -3,10 +3,13 @@ let completedLabel = document.querySelector("#completedIcon")
 
 
 taskLabel.addEventListener("click",function(){
+    //icons change
     taskLabel.src =  ("img/top icons/list/listActive_lightmode.png")
     completedLabel.src = ("img/top icons/done/doneNotactive_lightmode.png") 
+    //display change
     document.querySelector("#mainbox_list").style.display= "flex";
     document.querySelector("#mainbox_completed").style.display= "none";
+    //background and border change
     document.querySelector("#mainbox_icons_completedbox").style.backgroundColor = "#e6e6e6";
     document.querySelector("#mainbox_icons_iconbox").style.backgroundColor = "#f8f8f8";
     document.querySelector("#mainbox_icons_iconbox").style.borderBottom = "0px solid #c5c5c5";
@@ -16,10 +19,13 @@ taskLabel.addEventListener("click",function(){
 })
 
 completedLabel.addEventListener("click",function(){
+    //icons change
     taskLabel.src = ("img/top icons/list/listNotactive_lightmode.png") 
     completedLabel.src = ("img/top icons/done/doneActive_lightmode.png")
+    //display change
     document.querySelector("#mainbox_list").style.display= "none";
     document.querySelector("#mainbox_completed").style.display= "flex";
+    //background and border change
     document.querySelector("#mainbox_icons_completedbox").style.backgroundColor = "#f8f8f8";
     document.querySelector("#mainbox_icons_iconbox").style.backgroundColor = "#e6e6e6";;
     document.querySelector("#mainbox_icons_iconbox").style.borderBottom = "2px solid #c5c5c5";

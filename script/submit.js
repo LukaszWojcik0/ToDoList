@@ -84,9 +84,7 @@ function taskSubmit() {
 
     completeIcons.forEach((icon) => {
       icon.addEventListener("click", function(){
-        console.log("chujchujchuj")
-        CompleteTask()
-        DelteTask()
+        CompleteTask(this.classList)
       });
     });
 
