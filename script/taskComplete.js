@@ -84,6 +84,7 @@ let listparrent = document.querySelector(".listToDo");
 listparrent.innerHTML = "";
 LoadTasks();
 
+
 }
 ///////
     

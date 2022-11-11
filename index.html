@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="style/list.css" />
     <link rel="stylesheet" href="style/completed.css" />
     <link rel="stylesheet" href="style/task.css" />
+    
 
     <script src="script/taskDelete.js" defer></script>
+    <script src="script/taskComplete.js" defer></script>
     <script src="script/input.js" defer></script>
     <script src="script/submit.js" defer></script>
     <script src="script/loadTasks.js" defer></script>
+    <script src="script/loadCompleted.js" defer></script>
     <script src="script/tabsSwitch.js" defer></script>
-    <script src="script/taskComplete.js" defer></script>
   </head>
   <body>
     <div id="transBack">
@@ -49,7 +51,9 @@
         <ul class="listToDo"></ul>
         <img src="img/add/plus.png" alt="przycik dodania elementu" />
       </section>
-      <section id="mainbox_completed" class="listORcompleted"></section>
+      <section id="mainbox_completed" class="listORcompleted">
+        <ul class="listDone"></ul>
+      </section>
     </section>
   </body>
 </html>
