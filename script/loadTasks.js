@@ -1,3 +1,4 @@
+
 if (localStorage.getItem("z0") == null) {
   console.log("brak zadań w localstorage");
 } else {
@@ -37,7 +38,7 @@ if (localStorage.getItem("z0") == null) {
     confirmMark.src = "img/list/check-mark-black.png";
     taskElement.appendChild(confirmMark);
 
-    ///nic
+    
     const deleteIcons = document.querySelectorAll(".task_delete");
 
 
