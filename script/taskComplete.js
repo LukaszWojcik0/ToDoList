@@ -8,27 +8,34 @@ function CompleteTask(thisClass) {
     console.log(thisClass)
     // console.log(this.classList)
     let completeMarkClass = thisClass[1];
-    console.log("klasa 1" + completeMarkClass)
+    console.log("klasa 1 " + completeMarkClass)
     let valueNumber = completeMarkClass.slice(5);
-    console.log("value po slice" + valueNumber)
+    console.log("value po slice" + valueNumber);
     
     
     let task = localStorage.getItem("z"+valueNumber)
     // console.log(task)
     if (localStorage.getItem("complCounter")!=null){
-        localStorage.removeItem("complCounter")
+      let complCounter = localStorage.getItem("complCounter");
+      complCounter+= complCounter;
+
+      localStorage.removeItem("complCounter")
+      localStorage.setItem("complCounter", complCounter)
+      
+      for(let i = 0; i< complCounter; i++){
+          if (localStorage.getItem("c"+i)==null){
+            localStorage.setItem("c"+i, task);
+          }
+      }
     }else{
-        let complCounter = 0
-    localStorage.setItem("complCounter", complCounter)
-
-
-    for(let i = 0; i<= complCounter; i++){
-        if (localStorage.getItem("c"+i)==null){
-            localStorage.setItem("c"+i, task)
-        }
-    }
+        let complCounter = 1;
+    localStorage.setItem("complCounter", complCounter);
 
     }
+
+    
+
+    
 
     
 
