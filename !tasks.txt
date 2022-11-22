@@ -1,3 +1,34 @@
+NOWY JS
+-formularz tworzący zadanie
+-dodawanie elementów do local storage
+-tworzenie elementów zadań TYLKO z localstorage
+-usuwanie zadań z localstorage
+
+-przełączanie kart tasks/doneTasks
+
+-dodawnie elementów do localstorage zakończonych zadań
+-tworzenien elementów zadań zakończonych
+-usuwanie na zawsze zadań zakończonych 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /DONE/ dodanie kolorów do :hover nad przyciskami przy zadaniu 
 /DONE/ usunięcie autouzupełniania w polu dodawania zadania
 /DONE/ dodawanie zadań do local storage

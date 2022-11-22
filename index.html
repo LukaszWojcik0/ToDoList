@@ -9,22 +9,20 @@
     <link rel="stylesheet" href="style/list.css" />
     <link rel="stylesheet" href="style/completed.css" />
     <link rel="stylesheet" href="style/task.css" />
-    
 
-    <script src="script/taskDelete.js" defer></script>
-    <script src="script/taskComplete.js" defer></script>
-    <script src="script/input.js" defer></script>
-    <script src="script/submit.js" defer></script>
-    <script src="script/loadTasks.js" defer></script>
-    <script src="script/loadCompleted.js" defer></script>
-    <script src="script/tabsSwitch.js" defer></script>
+    <script src="script/addTask.js" defer></script>
+    <script src="script/storageObjects.js" defer></script>
   </head>
   <body>
     <div id="transBack">
       <div class="inputArea">
         <label class="labelTxtinp" for="txtinp">Podaj zadanie: </label>
         <input id="txtinp" type="text" autocomplete="off" />
-        <img src="img/add/right.png" alt="przycik dodania elementu" />
+        <img
+          id="confbutt"
+          src="img/add/right.png"
+          alt="przycik dodania elementu"
+        />
       </div>
     </div>
 
@@ -49,7 +47,11 @@
       </section>
       <section id="mainbox_list" class="listORcompleted">
         <ul class="listToDo"></ul>
-        <img src="img/add/plus.png" alt="przycik dodania elementu" />
+        <img
+          id="addButton"
+          src="img/add/plus.png"
+          alt="przycik dodania elementu"
+        />
       </section>
       <section id="mainbox_completed" class="listORcompleted">
         <ul class="listDone"></ul>

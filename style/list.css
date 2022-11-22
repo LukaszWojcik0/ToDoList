@@ -23,11 +23,7 @@ ul {
 }
 
 .listToDo {
-  /* background-color: #f8f8f8; */
-  /* display: flex; */
   position: relative;
   width: 100%;
   list-style: none;
-  /* overflow-y: scroll; */
-  /* justify-content: center; */
 }
